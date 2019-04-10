@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pad v2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>Pad</h1>
+        <input type="text" name="" id="user" maxlength="10" placeholder="User" autocomplete="false" spellcheck="false">
+        <input type="password" name="" id="password" maxlength="20" placeholder="Password">
+        <button onclick="go()">Go</button>
+    </div>
+    <div id="lapad">
+        <h1>Welcome to Pad!</h1>
+
+        <h3>Post</h3>
+        <input type="text" id="post" maxlength="140" autocomplete="false" spellcheck="false" placeholder="Type here">
+
+        <h3>Post to subject</h3>
+        <input type="text" id="subject" maxlength="10" autocomplete="false" spellcheck="false" placeholder="Post" value="general">
+        <button onclick="post()">Post</button>
+
+        <h3>Filter by subject</h3>
+        <input onkeyup="applyFilter()" type="text" id="filter" maxlength="10" autocomplete="false" spellcheck="false" value="general">
+
+        <h2>Posts</h2>
+        <ul id="posts">
+        </ul>
+    </div>
+</body>
+</html>
