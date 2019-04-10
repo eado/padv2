@@ -1,4 +1,4 @@
-var CONNURL = "ws://localhost:9001"
+var CONNURL = "wss://home.omarelamri.me:9001"
 
 var posts_all = []
 
